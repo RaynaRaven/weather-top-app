@@ -10,38 +10,35 @@
     #{if station.readings.size() > 0}
     <div class="ui five column grid">
       <div class="column" style="padding-left:0.5rem; padding-right: 0.5rem;">
-        <div class="ui inverted segment"
-             style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
+        <div class="ui inverted segment" style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
           <div class="ui container">
             <i class="large circular colored white map marked alternate icon" style="float:right;"> </i>
           </div>
           <p>
-            <br><span class="ui large white text" style="text-decoration: underline"><b>${station.name}</b></span>
+            <br><span class="ui large white text" style="text-decoration: underline "><b>${station.name}</b></span>
           </p>
-          <p class="ui small text" style="line-height:1.25em;font-size: smaller">
+          <p class = "ui small text" style="line-height:1.25em;">
             <b>Lat:</b> ${station.latitude}<br>
-            <b>Lng:</b> ${station.longitude}<br><br><br><br><br>
+            <b>Lng:</b> ${station.longitude}<br><br><br><br>
           </p>
         </div>
       </div>
       <div class="column" style="padding-left:0.5rem; padding-right: 0.5rem;">
-        <div class="ui inverted segment"
-             style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
+        <div class="ui inverted segment" style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
           <div class="ui container">
             <i class="${station.weatherIcon}" style="float:right;"> </i>
           </div>
           <p>
             <br><span class="ui large white text">Weather</span>
           </p>
-          <p class="ui small text" style="line-height:1.25em;font-size: smaller">
+          <p class = "ui small text" style="line-height:1.25em;">
             ${station.weatherCode}
-            <br><br><br><br><br><br>
+            <br><br><br><br><br>
           </p>
         </div>
       </div>
       <div class="column" style="padding-left:0.5rem; padding-right: 0.5rem;">
-        <div class="ui inverted segment"
-             style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
+        <div class="ui inverted segment" style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
           <div class="ui container">
             <i class="large circular colored white thermometer half icon" style="float:right;"> </i>
           </div>
@@ -51,7 +48,7 @@
           <div class="ui container">
             <i class="${station.trendTemp}" style="float:right;"> </i>
           </div>
-          <p class="ui small text" style="line-height:1.25em;font-size: smaller">
+          <p class = "ui small text" style="line-height:1.25em;font-size: smaller">
             ${station.tempCelsius} &degC<br>
             ${station.tempFahrenheit} &degF<br><br><br>
             <b>Min:</b> ${station.minTemp} &degC<br>
@@ -60,8 +57,7 @@
         </div>
       </div>
       <div class="column" style="padding-left:0.5rem; padding-right: 0.5rem;">
-        <div class="ui inverted segment"
-             style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
+        <div class="ui inverted segment" style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
           <div class="ui container">
             <i class="large circular colored white wind icon" style="float:right;"> </i>
           </div>
@@ -71,18 +67,17 @@
           <div class="ui container">
             <i class="${station.trendWind}" style="float:right;"> </i>
           </div>
-          <p class="ui small text" style="line-height:1.25em;font-size: smaller">
+          <p class = "ui small text" style="line-height:1.25em;font-size: smaller">
             ${station.beaufort} bft<br>
             ${station.windCompass}<br>
-            <b>feels like:</b> ${station.windChill}<br><br>
+            Feels like: ${station.windChill} &deg<br><br>
             <b>Min:</b> ${station.minWind} km/h<br>
             <b>Max:</b> ${station.maxWind} km/h
           </p>
         </div>
       </div>
       <div class="column" style="padding-left:0.5rem; padding-right: 0.5rem;">
-        <div class="ui inverted segment"
-             style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
+        <div class="ui inverted segment" style="background: radial-gradient(at top right, rebeccapurple,cornflowerblue)">
           <div class="ui container">
             <i class="large circular colored white compress arrows alternate icon" style="float:right;"></i>
           </div>
@@ -92,7 +87,7 @@
           <div class="ui container">
             <i class="${station.trendPressure}" style="float:right;"> </i>
           </div>
-          <p class="ui small text" style="line-height:1.25em;font-size: smaller">
+          <p class = "ui small text" style="line-height:1.25em;font-size: smaller">
             ${station.pressure} hpa <br><br><br><br>
             <b>Min:</b> ${station.minPressure} <br>
             <b>Max:</b> ${station.maxPressure} <br>
